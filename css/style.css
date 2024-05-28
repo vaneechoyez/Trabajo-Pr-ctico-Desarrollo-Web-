@@ -36,7 +36,7 @@ h6 {
   padding: 0;
 }
 
-/* Back to top button */
+/* boton de volver arriba*/
 
 .back-to-top {
   position: fixed;
@@ -547,14 +547,14 @@ h6 {
   width: 50%;
 }
 
-/* Section with background
+/* background
 --------------------------------*/
 
 .section-bg {
   background: #ecf5ff;
 }
 
-/* /* NOSOTROS
+/*  NOSOTROS
 --------------------------------*/
 
 #about {
@@ -1071,59 +1071,65 @@ h6 {
 /*--------------------------------------------------------------
 # Responsive Media 
 --------------------------------------------------------------*/
-/* Estilos para pantallas pequeñas */
-@media (max-width: 768px) {
-  #header {
-    height: auto;
-    padding: 15px 0;
+@media (max-width: 1200px) {
+  .intro-info {
+    padding: 40px;
   }
 
-  #header .logo img {
-    max-height: 40px;
-  }
-
-  .intro-info h2 {
-    font-size: 30px;
+  #intro .intro-info h2 {
+    font-size: 2.5em;
   }
 
   #intro .intro-info div a {
     padding: 8px 16px;
-    margin: 0 8px;
-  }
-
-  #intro .intro-info .btn-get-started,
-  #intro .intro-info .btn-services {
-    padding: 8px 24px;
+    font-size: 1em;
   }
 }
 
-/* Estilos para tabletas */
 @media (max-width: 992px) {
-  /* Agrega estilos específicos si es necesario */
+  .intro-info {
+    padding: 30px;
+  }
+
+  #intro .intro-info h2 {
+    font-size: 2em;
+  }
+
+  #intro .intro-info div a {
+    padding: 6px 12px;
+    font-size: 0.9em;
+  }
 }
 
-/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  .intro-info {
+    padding: 20px;
+  }
+
+  #intro .intro-info h2 {
+    font-size: 1.5em;
+  }
+
+  #intro .intro-info div a {
+    padding: 5px 10px;
+    font-size: 0.8em;
+  }
+}
+
 @media (max-width: 576px) {
-  #header .main-nav {
-    display: none; /* Ocultar el menú principal en dispositivos móviles */
+  .intro-info {
+    padding: 10px;
   }
 
-  #header .reservas-button {
-    display: block; /* Mostrar el botón de reservas en dispositivos móviles */
+  #intro .intro-info h2 {
+    font-size: 1.2em;
   }
 
-  #header .logo {
-    width: 100%; /* Ajustar el ancho del logo */
-    text-align: center; /* Centrar el logo */
-  }
-
-  #intro .intro-info .btn-get-started,
-  #intro .intro-info .btn-services {
-    margin-bottom: 10px; /* Espacio adicional entre botones */
-    display: block;
+  #intro .intro-info div a {
+    padding: 4px 8px;
+    font-size: 0.7em;
   }
 }
-
 @media (max-width: 767px) {
   #footer .footer-top {
     padding: 30px 0; /* Reducir el relleno para pantallas más pequeñas */
