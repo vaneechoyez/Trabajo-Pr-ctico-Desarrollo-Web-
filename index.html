@@ -66,7 +66,7 @@
   </header><!-- #header -->
 
   <!--==========================
-    Intro Section
+    Intro 
   ============================-->
  
   <section id="intro" class="clearfix">
@@ -175,7 +175,7 @@
 
         <div class="row about-extra">
           <div class="col-lg-6 wow fadeInUp order-1 order-lg-2">
-            <img src="img/fotos-10-Capturadepantalla2022-11-22163943.png" class="img-fluid" alt="">
+            <img src="img/paisaje.png" class="img-fluid" alt="">
           </div>
 
           <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
@@ -231,7 +231,7 @@
             <div class="destination-box">
               <img src="img/descarga(13).jpg" alt="Norte Argentino" class="img-fluid">
               <h4>Norte Argentino</h4>
-              <p>Explora la rica cultura y los impresionantes paisajes del Norte Argentino, con sus coloridas montañas y tradiciones ancestrales.</p>
+              <p>Explora la rica cultura y paisajes del Norte Argentino, con sus coloridas montañas y tradiciones ancestrales.</p>
               <div class="btn-container">
                 <button class="btn-reservar">Reservar</button>
               </div>
@@ -570,10 +570,12 @@
   </section>
 
 
+
   <script>
     document.getElementById('contactForm').addEventListener('submit', function(event) {
         
         event.preventDefault();
+
         let name = document.getElementById('name').value;
         let email = document.getElementById('email').value;
         let phone = document.getElementById('phone').value;
@@ -585,9 +587,9 @@
             alert('Por favor, complete todos los campos.');
             return false;
         }
-
+       
         alert('Formulario enviado exitosamente.');
-  
+        
         console.log({
             name: name,
             email: email,
@@ -596,7 +598,7 @@
             tripType: tripTypeChecked.value,
             message: message
         });
-       );
+    });
 </script>
 
   <!--==========================

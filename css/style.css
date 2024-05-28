@@ -138,8 +138,8 @@ h6 {
 }
 
 #header .logo img {
-  padding: 1;
-  margin: 7px 1;
+  padding: 1px;
+  margin: 7px 1px;
   max-height: 50px;
 }
  /* cambia el tamaño del logo */
@@ -272,13 +272,11 @@ h6 {
 
 #intro .intro-info .btn-get-started {
   background:  rgb(219,22,58);
-  border: 2px solid  rgb(219,22,58);
   color: #fff;
 }
 
 #intro .intro-info .btn-get-started:hover {
   background: rgb(12,1,69);
-  border-color:rgb(12,1,69);
   color: #fff;
 }
 
@@ -289,7 +287,6 @@ h6 {
 
 #intro .intro-info .btn-services:hover {
   background:rgb(219,22,58);
-  border-color: rgb(219,22,58);
   color: #fff;
 }
 /* los ultimos 4 editas los botones destinos y contacto */
@@ -297,14 +294,6 @@ h6 {
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
-
-/* Desktop Navigation */
-
-.main-nav {
-  /* Drop Down */
-  /* Deep Drop Down */
-}
-
 .main-nav,
 .main-nav * {
   margin: 0;
@@ -1061,8 +1050,6 @@ h6 {
 /*--------------------------------------------------------------
 # Responsive Media 
 --------------------------------------------------------------*/
-
-
 @media (max-width: 991px) {
   #header {
     height: 60px;
@@ -1091,6 +1078,8 @@ h6 {
     text-align: center;
   }
 
+}
+
 @media (max-width: 768px) {
   .back-to-top {
     bottom: 15px;
@@ -1111,6 +1100,7 @@ h6 {
     width: 100%;
   }
 
+}
 
 @media (max-width: 574px) {
   #intro {
