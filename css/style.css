@@ -554,7 +554,7 @@ h6 {
   background: #ecf5ff;
 }
 
-/* /* About Us Section
+/* /* NOSOTROS
 --------------------------------*/
 
 #about {
@@ -729,6 +729,21 @@ h6 {
   padding: 15px;
 }
 
+@media (max-width: 992px) {
+  .col-lg-4, .col-md-6 {
+    flex: 1 1 calc(50% - 30px); /* Cambia a 50% de ancho en pantallas medianas */
+    padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .col-lg-4, .col-md-6 {
+    flex: 1 1 calc(100% - 30px); /* Cambia a 100% de ancho en pantallas pequeñas */
+    padding: 15px;
+  }
+}
+
+
 /* Portfolio 
 --------------------------------*/
 
@@ -879,7 +894,9 @@ h6 {
 
 /* Contacto
 --------------------------------*/
-
+.contact-form {
+  padding: 40px;
+}
 #contact .section-header {
   text-align: center;
   margin-bottom: 30px;
@@ -919,10 +936,14 @@ h6 {
 .contact-form .info p {
   margin: 5px 0;
 }
-@media (min-width: 768px) {
+@media (max-width: 767px) {
   .contact-form {
-      padding: 40px;
+    padding: 20px; /* Reducir el relleno para pantallas más pequeñas */
   }
+  .contact-form .btn-submit {
+    width: 100%; /* Ancho completo para botón en pantallas pequeñas */
+  }
+}
 
 
 /*--------------------------------------------------------------
@@ -1107,3 +1128,20 @@ h6 {
     padding: 100px 0 20px 0;
   }
 }
+
+@media (max-width: 767px) {
+  #footer .footer-top {
+    padding: 30px 0; /* Reducir el relleno para pantallas más pequeñas */
+  }
+  #footer .footer-top .footer-info h3 {
+    font-size: 24px; /* Reducir el tamaño del título para pantallas más pequeñas */
+  }
+  #footer .footer-top .social-links a {
+    width: 30px;
+    height: 30px;
+    font-size: 16px; /* Ajustar el tamaño de los iconos de redes sociales */
+    line-height: 30px;
+    padding: 5px 0; /* Ajustar el relleno de los iconos de redes sociales */
+  }
+}
+
