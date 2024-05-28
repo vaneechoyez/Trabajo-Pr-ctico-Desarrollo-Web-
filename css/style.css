@@ -1071,61 +1071,56 @@ h6 {
 /*--------------------------------------------------------------
 # Responsive Media 
 --------------------------------------------------------------*/
-@media (max-width: 991px) {
-  #header {
-    height: 60px;
-    padding: 10px 0;
-  }
-
-  #header .logo h1 {
-    font-size: 28px;
-    padding: 8px 0;
-  }
-
-  #intro {
-    padding: 140px 0 60px 0;
-  }
-
-  #intro .intro-img {
-    width: 80%;
-    float: none;
-    margin: 0 auto 25px auto;
-  }
-
-  #intro .intro-info {
-    width: 80%;
-    float: none;
-    margin: auto;
-    text-align: center;
-  }
-
-}
-
+/* Estilos para pantallas pequeñas */
 @media (max-width: 768px) {
-  .back-to-top {
-    bottom: 15px;
+  #header {
+    height: auto;
+    padding: 15px 0;
+  }
+
+  #header .logo img {
+    max-height: 40px;
+  }
+
+  .intro-info h2 {
+    font-size: 30px;
+  }
+
+  #intro .intro-info div a {
+    padding: 8px 16px;
+    margin: 0 8px;
+  }
+
+  #intro .intro-info .btn-get-started,
+  #intro .intro-info .btn-services {
+    padding: 8px 24px;
   }
 }
 
-@media (max-width: 767px) {
-  #intro .intro-info {
-    width: 100%;
-  }
-
-  #intro .intro-info h2 {
-    font-size: 34px;
-    margin-bottom: 30px;
-  }
-
-  .section-header p {
-    width: 100%;
-  }
-
+/* Estilos para tabletas */
+@media (max-width: 992px) {
+  /* Agrega estilos específicos si es necesario */
 }
 
-@media (max-width: 574px) {
-  #intro {
-    padding: 100px 0 20px 0;
+/* Estilos para dispositivos móviles */
+@media (max-width: 576px) {
+  #header .main-nav {
+    display: none; /* Ocultar el menú principal en dispositivos móviles */
+  }
+
+  #header .reservas-button {
+    display: block; /* Mostrar el botón de reservas en dispositivos móviles */
+  }
+
+  #header .logo {
+    width: 100%; /* Ajustar el ancho del logo */
+    text-align: center; /* Centrar el logo */
+  }
+
+  #intro .intro-info .btn-get-started,
+  #intro .intro-info .btn-services {
+    margin-bottom: 10px; /* Espacio adicional entre botones */
+    display: block;
   }
 }
 
